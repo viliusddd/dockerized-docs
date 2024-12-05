@@ -1,0 +1,28 @@
+services:
+  tailwindcss:
+    build: {dockerfile: tailwindcss.Dockerfile}
+    ports: [3010:3000]
+  typescript:
+    build: {dockerfile: typescript.Dockerfile}
+    ports: [3011:8000]
+  vuejs:
+    build: {dockerfile: vuejs.Dockerfile}
+    ports: [3012:4173]
+  vueuse:
+    build: {dockerfile: vueuse.Dockerfile}
+    ports: [3013:4173]
+  # primevue:
+  #   build: {dockerfile: primevue.Dockerfile}
+  #   ports: [3014:3000]
+  pinia:
+    build: {dockerfile: pinia.Dockerfile}
+    ports: [3015:5173]
+  # mdn-web-docs:
+  #   build: {dockerfile: mdn-web-docs.Dockerfile}
+  #   ports: [3016:5042]
+  docker:
+    build: {dockerfile: docker.Dockerfile}
+    ports: [1313:1313]
+  # neovim:
+  #   build: {dockerfile: neovim.Dockerfile}
+  #   ports: [3017:3017]
