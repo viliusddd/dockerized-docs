@@ -1,28 +1,36 @@
 services:
   tailwindcss:
+    container_name: Tailwindcss
     build: {dockerfile: tailwindcss.Dockerfile}
     ports: [3010:3000]
   typescript:
     build: {dockerfile: typescript.Dockerfile}
     ports: [3011:8000]
   vuejs:
+    container_name: Vue.js
     build: {dockerfile: vuejs.Dockerfile}
     ports: [3012:4173]
   vueuse:
+    container_name: VueUse
     build: {dockerfile: vueuse.Dockerfile}
     ports: [3013:4173]
-  # primevue:
-  #   build: {dockerfile: primevue.Dockerfile}
-  #   ports: [3014:3000]
+  primevue:
+    container_name: PrimeVue
+    build: {dockerfile: primevue.Dockerfile}
+    ports: [3014:3000]
   pinia:
+    container_name: Pinia
     build: {dockerfile: pinia.Dockerfile}
     ports: [3015:5173]
-  # mdn-web-docs:
-  #   build: {dockerfile: mdn-web-docs.Dockerfile}
-  #   ports: [3016:5042]
+  mdn-web-docs:
+    container_name: Mdn
+    build: {dockerfile: mdn-web-docs.Dockerfile}
+    ports: [3016:5042]
   docker:
+    container_name: Docker
     build: {dockerfile: docker.Dockerfile}
     ports: [1313:1313]
-  # neovim:
-  #   build: {dockerfile: neovim.Dockerfile}
-  #   ports: [3017:3017]
+  vitest:
+    container_name: Vitest
+    build: {dockerfile: vitest.Dockerfile}
+    ports: [3018:4173]
