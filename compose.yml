@@ -34,3 +34,7 @@ services:
     container_name: Vitest
     build: {dockerfile: vitest.Dockerfile}
     ports: [3018:4173]
+  vuerouter:
+    container_name: VueRouter
+    build: {dockerfile: vue-router.Dockerfile}
+    ports: [3019:4173]
