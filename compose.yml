@@ -3,9 +3,9 @@ services:
     container_name: Tailwindcss
     build: {dockerfile: tailwindcss.Dockerfile}
     ports: [3010:3000]
-  typescript:
-    build: {dockerfile: typescript.Dockerfile}
-    ports: [3011:8000]
+  # typescript:
+  #   build: {dockerfile: typescript.Dockerfile}
+  #   ports: [3011:8000]
   vuejs:
     container_name: Vue.js
     build: {dockerfile: vuejs.Dockerfile}
@@ -38,3 +38,8 @@ services:
     container_name: VueRouter
     build: {dockerfile: vue-router.Dockerfile}
     ports: [3019:4173]
+  vitepress:
+    container_name: VitePress
+    build: {dockerfile: vitepress.Dockerfile}
+    ports: [3021:4173]
+
